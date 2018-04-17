@@ -1,0 +1,29 @@
+mysqli_connect() 	// digunakan untuk menghubungkan projek php dengan database.
+	contoh $koneksi = mysqli_connect("localhost","root","","nama_database");
+mysqli_query() 		// digunakan untuk menulis query dari php ke phpmyadmin,
+	contoh $kueri 	= mysqli_query($koneksi,"SELECT*FROM tabel");
+mysqli_fetch_array()	// digunakan untuk menampilkan data pada database berdasarkan kolom
+	contoh $tampil	= mysqli_fetch_array($kueri);
+		echo $tampil['atributmu'];menampilkannya
+mysqli_num_rows()	= digunakan untuk menampilkan jumlah data yang ada dalam tabel berdasarkan kondisi kueri
+	contoh $row	= mysqli_num_rows($kueri);
+		echo $row; // menampilkannya
+while($tampil){} //digunakan untuk menampilkan data sebanyak kondisi kueri
+html	
+<table></table> // membuat tabel
+<tr></tr> // membuat baris pada tabel
+<td></td> , <th></th> digunakna untuk membuat kolom dalam baris 
+contoh 	<tr> <td> </td> </tr>
+<form> digunakan untuk form
+terdapat
+	- action 		: digunakan untuk pindah ke file lain
+	- method		: digunakan untuk membawa value dari input berdasarkan name
+<input> digunakan untuk membuat textbox 
+didalam input 
+	- type 			: digunakan untuk tipe inputan (text,password,submit,date,email,number);
+	- name 			: digunakan seperti id 
+	- value			: nilai dari inputan
+	- placeholder  	: digunakan untuk menampilkan text hidden lah
+	- class
+	- id
+

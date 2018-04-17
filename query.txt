@@ -1,0 +1,5 @@
+<Buat Buku>
+CREATE VIEW buku_total as SELECTupload.tgl_post,buku.judul,buku.pengarang,buku.th_terbit,buku.harga,buku.ket,buku.stok,buku.gambar,admin.user,kategori.kategori FROM admin INNER join ((buku INNER JOIN kategori ON buku.id_ktg = kategori.id_ktg) INNER JOIN  upload ON buku.id_buku = upload.id_buku) on admin.id_admin = buku.id_admin
+
+<transaksi total>
+SELECT transaksi.id_pembeli , transaksi.id_buku,buku.judul,buku.pengarang,buku.harga,buku.gambar,transaksi.jumlah from transaksi inner join buku on transaksi.id_buku = buku.id_buku
